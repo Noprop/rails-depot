@@ -22,6 +22,9 @@
           <li><a href="/questions">Questions</a></li>
           <li><a href="/news">News</a></li>
           <li><a href="/contact">Contact</a></li>
+          <li>
+            <p><%= Time.new.month.to_s + "/" + Time.new.day.to_s + "/" + Time.new.year.to_s %></p>
+          </li>
         </ul>
       </nav>
       <main class='<%= controller.controller_name %>'>
