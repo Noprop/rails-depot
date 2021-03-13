@@ -8,4 +8,5 @@ class ApplicationRecord < ActiveRecord::Base
     with: %r{\.(gif|jpg|png)\Z}i,
     message: 'must be a URL for GIF, JPG, or PNG image.'
   }
+  validates :title, length: { minimum: 2, too_short: 'is too short, must be at least 2 characters' }
 end
